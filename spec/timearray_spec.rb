@@ -1,9 +1,9 @@
 require 'helper'
 
-describe 'TimeArray' do
-  subject (:ta) { TimeRanger::TimeArray.new }
+describe TimeRanger::TimeArray do
+  let(:ta) { described_class }
 
-  it 'should be kind of TimeArray' do
-    expect(ta).to be_a(TimeArray)
+  it 'is a kind of TimeArray' do
+    expect(ta).to be_a(described_class)
   end
 end
